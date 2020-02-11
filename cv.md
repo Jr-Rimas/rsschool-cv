@@ -1,7 +1,5 @@
 # Resume
 
-***
-
 ## Rimantas Yurkovlyanets
 
 ### Contact me
