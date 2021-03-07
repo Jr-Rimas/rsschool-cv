@@ -3,120 +3,216 @@ font-family: 'Merriweather Sans', sans-serif;
 font-family: 'Lato', sans-serif; 
 */
 
-*{
-  margin: 0;
-  padding: 0;
+/*  reset css  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.header {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  max-width: 1024px;
-  background-color: rgb(245, 243, 243);
-}
-
-.title {
-  align-self: flex-end;
-  padding-bottom: 20px;
-  margin-left: 5px;
-}
-
-.name {
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  font-size: 30px;
-}
-
-.profession {
-  margin-top: 10px;
-  text-transform: uppercase;
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-}
-
-.photo {
-  margin: 20px 5px 20px 0;
-  width: 180px;
-  height: 180px;
-  align-self: center;
-  background-image: url(./img/MyPhotoResume.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 4px solid rgb(143, 173, 212);
-  border-radius: 50%;
-}
-
-.contact {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1024px;
-  margin: auto;
-  padding: 20px 0 20px 0;
-  border-bottom: 2px solid rgb(245, 243, 243);
-}
-
-.contact__h3 {
-  margin-bottom: 5px;
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-}
-
-.contact__p {
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 12px;
+a {
   text-decoration: none;
-  color: black;
 }
 
-a:hover {
-  text-decoration: underline;
-  color: red;
+/*  end reset css */
+
+html {
+  font-size: 10px;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  max-width: 1024px;
-  margin: auto;
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: rgb(245, 240, 240);
 }
 
-.about {
-  margin: 50px;
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+h4 {
+  font-size: 2.5rem;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 400;
-  line-height: 1.5;
+  color: rgb(245, 240, 240);
 }
 
-.main__h2 {
-  margin: 10px 0 10px 50px;
-  font-family: 'Lato', sans-serif; 
-  font-size: 22px;
+p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.05rem;
+  color: #434a54;
 }
 
-.list {
-  margin: 0 0 0 70px;
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 16px;
+header, main, footer {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.footer {
+header, footer {
+  background: rgb(255,254,254);
+  background: linear-gradient(90deg, rgba(255,254,254,1) 0%, rgba(110,169,230,1) 57%);
+}
+
+.wrapper {
+  margin: 0 80px;
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.header_photo {
+  width: 20%;
+}
+
+.photo_cv {
+  border: solid 0.5rem lightgray;
+  border-radius: 100%;
+}
+
+
+.header_description {
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1024px;
-  height: 150px;
-  margin: 0 auto;
-  background-color: rgb(245, 243, 243);
+  align-items: center;
 }
 
-.footer__name {
-  align-self: center;
-  padding-bottom: 5px;
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 12px;
-  text-decoration: none;
-  color: black;
+.title_header {
+  padding-bottom: 20px;
 }
 
+.about{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  border-bottom: 2px solid rgb(216, 213, 213);
+}
+
+.about_description {
+  width: 60%;
+}
+
+.title_about {
+  padding-bottom: 20px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.contacts>ul>li {
+  padding-bottom: 10px;
+}
+
+.skills {
+  padding: 50px 0;
+  border-bottom: 2px solid rgb(216, 213, 213);
+}
+
+.skills_title {
+  padding-bottom: 20px;
+}
+
+.skills_item {
+  padding-bottom: 20px;
+}
+
+.scale-bar {
+  max-width: 700px;
+  height: 20px;
+  border: 5px solid rgb(216, 213, 213);
+  border-radius: 15px;
+}
+
+.progress_html {
+  width: 50%;
+  height: 100%;
+  background-color: #6ea9e6;
+  border-radius: 10px;
+}
+
+.progress_css {
+  width: 45%;
+  height: 100%;
+  background-color: #6ea9e6;
+  border-radius: 10px;
+}
+
+
+.progress_js {
+  width: 30%;
+  height: 100%;
+  background-color: #6ea9e6;
+  border-radius: 10px;
+}
+
+.education {
+  padding: 50px 0;
+}
+
+.title_education {
+  padding-bottom: 20px;
+}
+
+.wrapper_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.school {
+  margin: 10px 0;
+}
